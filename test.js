@@ -27,6 +27,18 @@ tman.it('hasMergedTest', function () {
   mergedMsg = 'Merge pull request #772 in HFE/xx from staging01 to master'
   assert.strictEqual(hasMergedTest(mergedMsg), true)
 
+  mergedMsg = 'Merge branch \'test\''
+  assert.strictEqual(hasMergedTest(mergedMsg), true)
+
+  mergedMsg = 'Merge branch \'staging\''
+  assert.strictEqual(hasMergedTest(mergedMsg), true)
+
+  mergedMsg = 'Merge branch \'test01\''
+  assert.strictEqual(hasMergedTest(mergedMsg), true)
+
+  mergedMsg = 'Merge branch \'staging01\''
+  assert.strictEqual(hasMergedTest(mergedMsg), true)
+
   mergedMsg = 'Merge pull request #772 in HFE/xx from feature-xx to master'
   assert.strictEqual(hasMergedTest(mergedMsg), false)
 
