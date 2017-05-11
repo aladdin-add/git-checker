@@ -1,0 +1,30 @@
+{
+  "name": "check-branch",
+  "version": "0.0.1",
+  "description": "检查当前的分支是否包含危险的提交（merge test/staging）",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix",
+    "test": "standard && istanbul cover _tman 'test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.sankuai.com/~zhaoshengdong/check-branch.git"
+  },
+  "keywords": [
+    "git",
+    "branch",
+    "nodejs"
+  ],
+  "author": "薛定谔的猫",
+  "license": "MIT",
+  "dependencies": {
+    "gift": "^0.10.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "standard": "^10.0.2",
+    "tman": "^1.6.7"
+  }
+}

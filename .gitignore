@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+coverage/
+*/node_modules
+npm-debug.log
+*.swp
+.sw*
+.idea/*
+.jshintrc
+.travis.yml
