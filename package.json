@@ -1,5 +1,5 @@
 {
-  "name": "check-branch",
+  "name": "git-check",
   "version": "0.0.1",
   "description": "检查当前的分支是否包含危险的提交（merge test/staging）",
   "main": "index.js",
@@ -12,6 +12,9 @@
     "type": "git",
     "url": "ssh://git@git.sankuai.com/~zhaoshengdong/check-branch.git"
   },
+  "bin": {
+    "git-check": "./cli.js"
+  },
   "keywords": [
     "git",
     "branch",
@@ -20,7 +23,7 @@
   "author": "薛定谔的猫",
   "license": "MIT",
   "dependencies": {
-    "gift": "^0.10.0"
+    "shelljs": "^0.7.7"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
