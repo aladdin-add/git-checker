@@ -1,5 +1,5 @@
 {
-  "name": "git-check",
+  "name": "git-checker",
   "version": "0.0.1",
   "description": "检查当前的分支是否包含危险的提交（merge test/staging）",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.sankuai.com/~zhaoshengdong/check-branch.git"
+    "url": "git@github.com:Aladdin-ADD/git-checker.git"
   },
   "bin": {
-    "git-check": "./cli.js"
+    "git-checker": "./cli.js"
   },
   "keywords": [
     "git",
