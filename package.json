@@ -1,6 +1,6 @@
 {
   "name": "git-checker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "检查当前的分支是否包含危险的提交（merge test/staging）",
   "main": "index.js",
   "scripts": {
