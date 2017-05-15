@@ -12,7 +12,7 @@ module.exports.hasMergedTest = function (msg) {
     /merge branch '(test|staging)\w*'/i                        // local merged.
   ]
 
-  msg = msg || shell.exec('git log --merges --since="4 weeks ago"', {silent: true})
+  msg = msg || shell.exec('git log --min-parents=2 --since="4 weeks ago"', {silent: true})
 
   return regs.some(function (item) {
     // check commit message
