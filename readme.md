@@ -16,7 +16,7 @@ npm i git-checker -D
 ```bash
 ./node_modules/.bin/git-checker
 ```
-您可以很方便的将它添加到 npm scripts 中：
+您可以很方便的将它添加到 npm scripts 中（假设发布命令为`publish`）：
 ```js
 // file:package.json
 {
