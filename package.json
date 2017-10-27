@@ -13,7 +13,7 @@
     "url": "git@github.com:Aladdin-ADD/git-checker.git"
   },
   "bin": {
-    "git-checker": "./cli.js"
+    "git-checker": "./has-merge-tests.js"
   },
   "keywords": [
     "git",
