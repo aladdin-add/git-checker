@@ -4,8 +4,8 @@
   "description": "检查当前的分支是否包含危险的提交（merge test/staging）",
   "main": "index.js",
   "scripts": {
-    "lint": "standard",
-    "fix": "standard --fix",
+    "lint": "eslint -c @yonyou-cloud/eslint-config/base.js *.js",
+    "lint:fix": "eslint --fix -c @yonyou-cloud/eslint-config/base.js *.js",
     "test": "standard && istanbul cover _tman 'test.js'"
   },
   "repository": {
@@ -26,6 +26,8 @@
     "shelljs": "^0.7.7"
   },
   "devDependencies": {
+    "@yonyou-cloud/eslint-config": "0.0.1",
+    "eslint": "^4.9.0",
     "istanbul": "^0.4.5",
     "standard": "^10.0.2",
     "tman": "^1.6.7"
